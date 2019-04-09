@@ -1,0 +1,10 @@
+D:\Dev Program\Dot Net\SourceCode\Segment01\Segment01\Segment01\bin\Debug\Segment01.exe
+D:\Dev Program\Dot Net\SourceCode\Segment01\Segment01\Segment01\bin\Debug\Segment01.pdb
+D:\Dev Program\Dot Net\SourceCode\Segment01\Segment01\Segment01\obj\Debug\Segment01.csprojAssemblyReference.cache
+D:\Dev Program\Dot Net\SourceCode\Segment01\Segment01\Segment01\obj\Debug\Segment01.Properties.Resources.resources
+D:\Dev Program\Dot Net\SourceCode\Segment01\Segment01\Segment01\obj\Debug\Segment01.csproj.GenerateResource.cache
+D:\Dev Program\Dot Net\SourceCode\Segment01\Segment01\Segment01\obj\Debug\Segment01.csproj.CoreCompileInputs.cache
+D:\Dev Program\Dot Net\SourceCode\Segment01\Segment01\Segment01\obj\Debug\Segment01.exe
+D:\Dev Program\Dot Net\SourceCode\Segment01\Segment01\Segment01\obj\Debug\Segment01.pdb
+D:\Dev Program\Dot Net\SourceCode\Segment01\Segment01\Segment01\obj\Debug\Segment01.Manage.resources
+D:\Dev Program\Dot Net\SourceCode\Segment01\Segment01\Segment01\obj\Debug\Segment01.Main.resources
