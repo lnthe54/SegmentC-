@@ -28,27 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tbIdBook = new System.Windows.Forms.TextBox();
-            this.tbName = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.tbName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.tbNumber = new System.Windows.Forms.TextBox();
+            this.tbAmount = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtAuthor = new System.Windows.Forms.TextBox();
+            this.tbAuthor = new System.Windows.Forms.TextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.comboBox = new System.Windows.Forms.ComboBox();
-            this.btnViewAll = new System.Windows.Forms.Button();
             this.id_book = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.author = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.type_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.comboBox = new System.Windows.Forms.ComboBox();
+            this.btnViewAll = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbInputSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.comboxSearch = new System.Windows.Forms.ComboBox();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -79,21 +87,21 @@
             this.tbIdBook.Size = new System.Drawing.Size(121, 20);
             this.tbIdBook.TabIndex = 2;
             // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(12, 128);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(54, 13);
+            this.lblName.TabIndex = 3;
+            this.lblName.Text = "Tên Sách";
+            // 
             // tbName
             // 
-            this.tbName.AutoSize = true;
-            this.tbName.Location = new System.Drawing.Point(12, 128);
+            this.tbName.Location = new System.Drawing.Point(81, 125);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(54, 13);
-            this.tbName.TabIndex = 3;
-            this.tbName.Text = "Tên Sách";
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(81, 125);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(121, 20);
-            this.txtName.TabIndex = 4;
+            this.tbName.Size = new System.Drawing.Size(121, 20);
+            this.tbName.TabIndex = 4;
             // 
             // label3
             // 
@@ -104,12 +112,12 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Số lượng";
             // 
-            // tbNumber
+            // tbAmount
             // 
-            this.tbNumber.Location = new System.Drawing.Point(81, 204);
-            this.tbNumber.Name = "tbNumber";
-            this.tbNumber.Size = new System.Drawing.Size(121, 20);
-            this.tbNumber.TabIndex = 8;
+            this.tbAmount.Location = new System.Drawing.Point(81, 204);
+            this.tbAmount.Name = "tbAmount";
+            this.tbAmount.Size = new System.Drawing.Size(121, 20);
+            this.tbAmount.TabIndex = 8;
             // 
             // label4
             // 
@@ -120,26 +128,28 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Tác giả";
             // 
-            // txtAuthor
+            // tbAuthor
             // 
-            this.txtAuthor.Location = new System.Drawing.Point(81, 165);
-            this.txtAuthor.Name = "txtAuthor";
-            this.txtAuthor.Size = new System.Drawing.Size(121, 20);
-            this.txtAuthor.TabIndex = 8;
+            this.tbAuthor.Location = new System.Drawing.Point(81, 165);
+            this.tbAuthor.Name = "tbAuthor";
+            this.tbAuthor.Size = new System.Drawing.Size(121, 20);
+            this.tbAuthor.TabIndex = 8;
             // 
             // dataGridView
             // 
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.AllowUserToDeleteRows = false;
             this.dataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_book,
@@ -149,9 +159,56 @@
             this.type_name});
             this.dataGridView.Location = new System.Drawing.Point(68, 338);
             this.dataGridView.Name = "dataGridView";
+            this.dataGridView.ReadOnly = true;
             this.dataGridView.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridView.Size = new System.Drawing.Size(633, 150);
             this.dataGridView.TabIndex = 9;
+            this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Cell_Click);
+            // 
+            // id_book
+            // 
+            this.id_book.DataPropertyName = "id_book";
+            this.id_book.FillWeight = 70F;
+            this.id_book.HeaderText = "Mã Sách";
+            this.id_book.Name = "id_book";
+            this.id_book.ReadOnly = true;
+            this.id_book.Width = 70;
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "name";
+            this.name.FillWeight = 150F;
+            this.name.HeaderText = "Tên Sách";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Width = 150;
+            // 
+            // author
+            // 
+            this.author.DataPropertyName = "author";
+            this.author.FillWeight = 150F;
+            this.author.HeaderText = "Tác Giả";
+            this.author.Name = "author";
+            this.author.ReadOnly = true;
+            this.author.Width = 150;
+            // 
+            // number
+            // 
+            this.number.DataPropertyName = "number";
+            this.number.FillWeight = 70F;
+            this.number.HeaderText = "Số Lượng";
+            this.number.Name = "number";
+            this.number.ReadOnly = true;
+            this.number.Width = 70;
+            // 
+            // type_name
+            // 
+            this.type_name.DataPropertyName = "type_name";
+            this.type_name.FillWeight = 150F;
+            this.type_name.HeaderText = "Loại Sách";
+            this.type_name.Name = "type_name";
+            this.type_name.ReadOnly = true;
+            this.type_name.Width = 150;
             // 
             // label5
             // 
@@ -171,14 +228,18 @@
             this.btnAdd.TabIndex = 11;
             this.btnAdd.Text = "THÊM";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // comboBox
             // 
+            this.comboBox.DropDownHeight = 70;
             this.comboBox.FormattingEnabled = true;
+            this.comboBox.IntegralHeight = false;
             this.comboBox.Location = new System.Drawing.Point(81, 240);
             this.comboBox.Name = "comboBox";
             this.comboBox.Size = new System.Drawing.Size(121, 21);
             this.comboBox.TabIndex = 12;
+            this.comboBox.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelected_Index);
             // 
             // btnViewAll
             // 
@@ -190,68 +251,102 @@
             this.btnViewAll.UseVisualStyleBackColor = true;
             this.btnViewAll.Click += new System.EventHandler(this.btnViewAll_Click);
             // 
-            // id_book
+            // btnLogout
             // 
-            this.id_book.DataPropertyName = "id_book";
-            this.id_book.FillWeight = 70F;
-            this.id_book.HeaderText = "Mã Sách";
-            this.id_book.Name = "id_book";
-            this.id_book.Width = 70;
+            this.btnLogout.Location = new System.Drawing.Point(19, 21);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(75, 23);
+            this.btnLogout.TabIndex = 14;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // name
+            // btnUpdate
             // 
-            this.name.DataPropertyName = "name";
-            this.name.FillWeight = 150F;
-            this.name.HeaderText = "Tên Sách";
-            this.name.Name = "name";
-            this.name.Width = 150;
+            this.btnUpdate.Location = new System.Drawing.Point(268, 128);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 15;
+            this.btnUpdate.Text = "SỬA";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // author
+            // groupBox1
             // 
-            this.author.DataPropertyName = "author";
-            this.author.FillWeight = 150F;
-            this.author.HeaderText = "Tác Giả";
-            this.author.Name = "author";
-            this.author.Width = 150;
+            this.groupBox1.Controls.Add(this.tbInputSearch);
+            this.groupBox1.Controls.Add(this.btnSearch);
+            this.groupBox1.Controls.Add(this.comboxSearch);
+            this.groupBox1.Location = new System.Drawing.Point(440, 86);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(261, 134);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Tìm kiếm";
             // 
-            // number
+            // tbInputSearch
             // 
-            this.number.DataPropertyName = "number";
-            this.number.FillWeight = 70F;
-            this.number.HeaderText = "Số Lượng";
-            this.number.Name = "number";
-            this.number.Width = 70;
+            this.tbInputSearch.Location = new System.Drawing.Point(7, 74);
+            this.tbInputSearch.Name = "tbInputSearch";
+            this.tbInputSearch.Size = new System.Drawing.Size(120, 20);
+            this.tbInputSearch.TabIndex = 2;
             // 
-            // type_name
+            // btnSearch
             // 
-            this.type_name.DataPropertyName = "type_name";
-            this.type_name.FillWeight = 150F;
-            this.type_name.HeaderText = "Loại Sách";
-            this.type_name.Name = "type_name";
-            this.type_name.Width = 150;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(146, 34);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(109, 61);
+            this.btnSearch.TabIndex = 1;
+            this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // Form1
+            // comboxSearch
+            // 
+            this.comboxSearch.FormattingEnabled = true;
+            this.comboxSearch.Location = new System.Drawing.Point(6, 34);
+            this.comboxSearch.Name = "comboxSearch";
+            this.comboxSearch.Size = new System.Drawing.Size(121, 21);
+            this.comboxSearch.TabIndex = 0;
+            this.comboxSearch.SelectedIndexChanged += new System.EventHandler(this.Selected_Search);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(268, 297);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(107, 35);
+            this.btnDelete.TabIndex = 17;
+            this.btnDelete.Text = "Xóa";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // Manage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 528);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnViewAll);
             this.Controls.Add(this.comboBox);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dataGridView);
-            this.Controls.Add(this.txtAuthor);
+            this.Controls.Add(this.tbAuthor);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.tbNumber);
+            this.Controls.Add(this.tbAmount);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtName);
             this.Controls.Add(this.tbName);
+            this.Controls.Add(this.lblName);
             this.Controls.Add(this.tbIdBook);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "Manage";
             this.Text = "Thư Viện";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,12 +357,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbIdBook;
-        private System.Windows.Forms.Label tbName;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tbNumber;
+        private System.Windows.Forms.TextBox tbAmount;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtAuthor;
+        private System.Windows.Forms.TextBox tbAuthor;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnAdd;
@@ -278,6 +373,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn author;
         private System.Windows.Forms.DataGridViewTextBoxColumn number;
         private System.Windows.Forms.DataGridViewTextBoxColumn type_name;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox tbInputSearch;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.ComboBox comboxSearch;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 
